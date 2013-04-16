@@ -1,0 +1,6 @@
+require 'rubygems'
+require 'thor'
+
+require 'lloc'
+
+Lloc.start(ARGV)
