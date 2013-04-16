@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'thor'
-
 class Lloc < Thor
 
   desc "count", "Counts logical lines of code, ignoring things like php tags, include statements, class and function declarations, and standalone brackets"
@@ -27,5 +24,3 @@ class Lloc < Thor
   end
 
 end
-
-Lloc.start(ARGV)
