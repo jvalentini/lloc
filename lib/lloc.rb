@@ -13,6 +13,7 @@ class Lloc < Thor
         match = true if line.match /^\s*\b(abstract\b\s+)?class\b/i
         match = true if line.match /^\s*\b(abstract\b\s+)?((public|protected|private)\b\s+)?(static\b\s+)?(function)\b/i
         match = true if line.match /^\s*[{}]/i
+        match = true if line.match /^\s*\/\//
 
         unless match
           counter += 1
